@@ -24,7 +24,7 @@ app.post("/order", async (req, res) => {
         const order = await razorpay.orders.create(options)
 
         if (!order) {
-            returnres.status(500).send("Error")
+            return res.status(500).send("Error")
         }
 
         res.json(order)
