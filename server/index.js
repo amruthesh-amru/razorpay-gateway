@@ -7,7 +7,7 @@ require("dotenv").config()
 
 const app = express()
 const PORT = process.env.PORT;
-
+//live key
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cors())
